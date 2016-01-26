@@ -1,0 +1,59 @@
+javascript side differences
+---------------------------
+
+2.51-2.52: none
+2.52-2.53:
+  dropUpload: neglectable differences
+  files: adaptation for TinyMCE4
+  init:  adaptation for TinyMCE4
+2.53-2.54: none
+2.54-3.0: changes on structure
+  for all files:
+    moved functions from "browser" to "_"
+    usage of $.$.kuki plugin instead of _.kuki
+    usage when possible of jquery
+  object.js   	-> 040.object.js: scrollbarWidth
+  none        	-> 041.dialog.js
+  init.js     	-> 050.init.js:
+    + changes on browser object, many functions moved to [_] function
+  toolbar.js  	-> 060.toolbar.js:
+    moved functions from "browser" to "_"
+  settings.js 	-> 070.settings.js:
+  files.js 	-> 080.files.js:
+    - moved menuFile on new container(091.menus.js)
+    - moved viewImage on new container(091.viewImage.js)
+  folder.js	-> 090.folder.js
+    - moved menuFile on new container(091.menus.js)
+  dropUpload.js	-> 110.dropUpload.js:
+  misc.js	-> 120.misc.js:
+3.0-3.10:
+removed old files
+  100.clipboard.js:
+    some little improvements (disableTextSelected)
+3.10-3.11: none
+3.11-3.12: mobile management
+  041.dialog.js:
+    - fileNameDialog: changed arguments
+  050.init.js:
+    - mobile class to body when necessary;
+  060.toolbar.js:
+    + on uploadFile changed message display on error
+    + on check for errors reset opacity
+  080.files.js:
+    - taphold event(connected to taphold jquery plugin)
+    - many changes for mobile management
+  090.folders.js:
+    - taphold event(connected to taphold jquery plugin)
+  091.menus.js:
+    - some deco changes;
+    - fileNameDialog changes;
+  110.dropUpload.js:
+    - decorations changes;
+  120.misc.js:
+    - getURL changed
+
+
+
+
+
+
